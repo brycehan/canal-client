@@ -12,7 +12,7 @@ import top.javatool.canal.client.annotation.CanalTable;
 import top.javatool.canal.client.context.CanalContext;
 import top.javatool.canal.client.handler.EntryHandler;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

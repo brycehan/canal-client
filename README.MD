@@ -8,7 +8,9 @@ canal 自身提供了简单的客户端，如果要转换为数据库的实体�
 该客户端直接将canal的数据原始类型转换为各个数据表的实体对象，并解耦数据的增删改操作，方便给业务使用。
 
 ### 要求
-java8+
+
+* java17+
+* Spring Boot 3.2.x
 
 ### 特性
 * 解耦单表增删操作
@@ -23,7 +25,7 @@ maven 依赖
   <dependency>
       <groupId>top.javatool</groupId>
       <artifactId>canal-spring-boot-starter</artifactId>
-      <version>1.2.6-RELEASE</version>
+      <version>1.2.7-RELEASE</version>
   </dependency>
 ```
 java 方式
@@ -31,7 +33,7 @@ java 方式
  <dependency>
        <groupId>top.javatool</groupId>
        <artifactId>canal-client</artifactId>
-       <version>1.2.6-RELEASE</version>
+       <version>1.2.7-RELEASE</version>
  </dependency>
 ```
 配置说明

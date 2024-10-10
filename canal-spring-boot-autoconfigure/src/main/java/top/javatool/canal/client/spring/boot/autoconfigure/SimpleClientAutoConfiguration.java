@@ -22,7 +22,7 @@ import top.javatool.canal.client.spring.boot.properties.CanalSimpleProperties;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 
-@Configuration
+@Configuration(enforceUniqueMethods = false)
 @EnableConfigurationProperties(CanalSimpleProperties.class)
 @ConditionalOnBean(value = {EntryHandler.class})
 @ConditionalOnProperty(value = CanalProperties.CANAL_MODE, havingValue = "simple", matchIfMissing = true)
