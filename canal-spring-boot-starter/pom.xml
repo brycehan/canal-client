@@ -55,14 +55,6 @@
                     <target>17</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.4</version>
-                <configuration>
-                    <aggregate>true</aggregate>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
@@ -95,27 +87,6 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
-                    <!-- Javadoc -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.1.0</version>
-                        <executions>
-                            <execution>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <tags>
-                                <tag>
-                                    <name>date</name>
-                                </tag>
-                            </tags>
-                        </configuration>
                     </plugin>
                     <!-- Gpg Signature -->
 <!--                    <plugin>-->
